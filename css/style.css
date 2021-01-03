@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  font-size: 1rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif; }
+
+.container-fluid {
+  background-color: var(--background-principal); }
+
+a {
+  color: var(--text-gray-second); }
+  a:hover {
+    text-decoration: none;
+    background-color: var(--text-gray-principal);
+    cursor: pointer;
+    color: var(--text-gray-second); }
+
+h1 {
+  color: var(--text-gray-principal);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: var(--text-shadow); }
+
+h2 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 400; }
+
+p {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 300; }
+
+img {
+  width: 40px;
+  height: 40px; }
+
+:root {
+  --text-gray-principal: #a0aec0;
+  --text-gray-second: #4a5066;
+  --text-marron-principal: #382a00;
+  --background-principal: #1a202c;
+  --background-second: #2d3748;
+  --violet: #44337a;
+  --orange: #e78724;
+  --orange-marron: #c77311;
+  --orange-marron-light: #d37410;
+  --dore-green: #b19122;
+  --yellow: #fed000;
+  --orange-red: #ff5100;
+  --blue-cendre-one: #253f7c;
+  --blue-cendre-two: #2b5a86;
+  --blue-cendre-three: #385ab4;
+  --blue-violet: #3938b0;
+  --marron-red: #a4421d;
+  --marron-red-second: #c2572d;
+  --violet-dark: #572995;
+  --violet-dark-second: #8941af;
+  --red-dark: #933b2d;
+  --red-dark-second: #ad4f43;
+  --green-water: #2d8792;
+  --green-water-second: #429ead;
+  --pink-red: #d01c14;
+  --blue-sky: #8aa6d5;
+  --text-shadow: 1px 1px 2px black;
+  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+
+form {
+  padding: 4rem; }
+  form .formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  form input,
+  form textarea {
+    min-width: 60rem;
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    margin: 0 2rem;
+    padding: 1rem 2rem; }
+
+.alert {
+  margin: 1rem 0; }
+
+header {
+  background-color: var(--background-principal);
+  height: 10vh; }
+
+footer {
+  background-color: var(--background-principal);
+  height: 10vh; }
+
+form {
+  background-color: var(--background-principal);
+  height: 80vh; }
+
+.hero {
+  background-color: var(--blue-sky);
+  height: 50vh; }
+  .hero .hero-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .hero .hero-hero .hero-image {
+      width: 540px;
+      height: 282px;
+      display: inline-block; }
+  .hero.hero-compagnies {
+    background-color: var(--marron-red); }
+  .hero.hero-feho {
+    background-color: var(--violet-dark); }
+  .hero.hero-festivals {
+    background-color: var(--red-dark); }
+  .hero.hero-formations {
+    background-color: var(--blue-violet); }
+
+.contenus {
+  background-color: var(--pink-red);
+  height: 30vh; }
+  .contenus.contenus-compagnies {
+    background-color: var(--orange); }
+  .contenus.contenus-feho {
+    background-color: var(--blue-cendre-three); }
+  .contenus.contenus-festivals {
+    background-color: var(--orange-marron-light); }
+  .contenus.contenus-formations {
+    background-color: var(--blue-sky); }
+
+.card {
+  box-shadow: var(--box-shadow); }
+  .card .card-body .card-title,
+  .card .card-body .card-text {
+    color: var(--text-marron-principal); }
+
+footer {
+  flex-flow: row;
+  justify-content: center;
+  align-items: center; }
+  footer ul {
+    display: flex;
+    justify-content: space-evenly; }
+
+.fehoContenu {
+  color: white; }

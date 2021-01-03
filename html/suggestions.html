@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Exploration pour un site Théâtres d'Afrique </title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col">
+
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="../index.html">Théâtres d'Afrique</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active"> <a href="../index.html" class="nav-link"> Accueil </a> </li>
+                            <li class="nav-item "> <a href="festivals.html" class="nav-link"> Festivals </a>
+                            </li>
+                            <li class="nav-item "> <a href="formations.html" class="nav-link"> Formations</a>
+                            </li>
+                            <li class="nav-item "> <a href="compagnies.html" class="nav-link"> Compagnies </a>
+                            </li>
+                            <li class="nav-item "> <a href="feho.html" class="nav-link"> Femmes et Hommes </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="container-fluid ">
+        <form class="row">
+            <div class="col-12 formulaire">
+
+                <h2 class="title title-underline"> Ajouter une suggestion </h2>
+
+                <div class="form-group">
+                    <label for=”date”> date </label>
+                    <input type=”text” placeholder=”date:jj:mm:yyyy” id=”date” required>
+                </div>
+
+                <div class="form-group">
+                    <label for="title"> Titre de la suggestion </label>
+                    <input type="text" class=”form-control” placeholder="titre de la suggestion" name="title">
+                </div>
+                <div class="form-group">
+                    <label for="Author"> Nom et Prénom de l'auteur de la suggestion </label>
+                    <input type="text" class=”form-control” placeholder="nom et prénom de l'auteur de la suggesion"
+                        name="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="category"> Pays </label>
+                    <input type="text" class=”form-control” placeholder="pays de l'auteur" name="category" required>
+                </div>
+                <div class="form-group">
+                    <label for="img"> Image facultative </label>
+                    <input type="text" placeholder="image" class=”form-control” name="img">
+                </div>
+
+                <div class="form-group">
+                    <label for="content"> Suggestion </label>
+                    <textarea name="content" placeholder="suggestion" required></textarea>
+                </div>
+
+                <div class="form-btn-container">
+                    <button class="btn btn-primary" type="submit"> Envoyer</button>
+                    <button class="btn btn-danger" type='button'> Annuler</button>
+                </div>
+
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <h5 class="alert-heading"> Merci de vos suggestions ! A bientôt au théâtre. </h5>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+        <footer class="row">
+            <div class="col-12">
+                <ul class="list-inline">
+                    <li class="list-inline-item"> <a href=""> Vos avis (renvoie sur un site facebook) </a>
+                    </li>
+                    <li class="btn list-inline-item"> <a href="./html/suggestions.html"> Vos suggestions </a>
+                    </li>
+                    <li class="list-inline-item"> <a href=""> Mentions obligatoires </a> </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

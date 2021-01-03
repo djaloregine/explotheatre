@@ -1,0 +1,119 @@
+@import "generalities";
+@import "variables";
+@import "compagnies";
+@import "feho";
+@import "festivals";
+@import "formations";
+@import "suggestions";
+
+
+header {
+    background-color: var(--background-principal);
+    height: 10vh;
+}
+
+
+footer {
+    background-color: var(--background-principal);
+    height: 10vh;
+}
+
+form {
+    background-color: var(--background-principal);
+    height: 80vh;
+}
+
+.hero {
+    background-color: var(--blue-sky);
+    height: 50vh;
+
+    .hero-hero {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hero-image {
+            width: 540px;
+            height: 282px;
+            display: inline-block;
+
+
+        }
+    }
+
+    &.hero-compagnies {
+        background-color: var(--marron-red);
+
+    }
+
+    &.hero-feho {
+        background-color: var(--violet-dark);
+
+    }
+
+    &.hero-festivals {
+        background-color: var(--red-dark);
+
+    }
+
+    &.hero-formations {
+        background-color: var(--blue-violet);
+
+    }
+
+
+}
+
+.contenus {
+    background-color: var(--pink-red);
+    height: 30vh;
+
+    &.contenus-compagnies {
+        background-color: var(--orange);
+
+    }
+
+    &.contenus-feho {
+        background-color: var(--blue-cendre-three);
+
+    }
+
+    &.contenus-festivals {
+        background-color: var(--orange-marron-light);
+
+    }
+
+    &.contenus-formations {
+        background-color: var(--blue-sky);
+
+    }
+}
+
+.card {
+    box-shadow: var(--box-shadow);
+
+    .card-body {
+
+        .card-title,
+        .card-text {
+            color: var(--text-marron-principal);
+        }
+    }
+}
+
+footer {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+.fehoContenu {
+    color: white;
+}
