@@ -9,16 +9,24 @@ html,
 body {
     font-size: 1rem;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+    overflow: hidden;
 
 }
 
-.container-fluid {
+header,
+footer {
     background-color: var(--background-principal);
 
 }
 
+
 a {
     color: var(--text-gray-second);
+    text-decoration: none;
+
+    &.white {
+        color: white;
+    }
 
     &:hover {
         text-decoration: none;
@@ -26,6 +34,7 @@ a {
         cursor: pointer;
         color: var(--text-gray-second);
     }
+
 
 }
 
@@ -38,7 +47,7 @@ h1 {
 
 h2 {
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -51,4 +60,19 @@ p {
 img {
     width: 40px;
     height: 40px;
+}
+
+button {
+    border: 0px transparent;
+    border-radius: 0.3rem;
+    background-color: var(--background-principal);
+    color: white;
+
+    &:hover {
+        border: 0px transparent;
+        background-color: var(--text-gray-principal);
+        cursor: pointer;
+        color: var(--text-gray-second);
+    }
+
 }

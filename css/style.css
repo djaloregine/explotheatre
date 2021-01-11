@@ -6,13 +6,18 @@
 html,
 body {
   font-size: 1rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif; }
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  overflow: hidden; }
 
-.container-fluid {
+header,
+footer {
   background-color: var(--background-principal); }
 
 a {
-  color: var(--text-gray-second); }
+  color: var(--text-gray-second);
+  text-decoration: none; }
+  a.white {
+    color: white; }
   a:hover {
     text-decoration: none;
     background-color: var(--text-gray-principal);
@@ -27,7 +32,7 @@ h1 {
 
 h2 {
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400; }
 
 p {
@@ -38,6 +43,17 @@ p {
 img {
   width: 40px;
   height: 40px; }
+
+button {
+  border: 0px transparent;
+  border-radius: 0.3rem;
+  background-color: var(--background-principal);
+  color: white; }
+  button:hover {
+    border: 0px transparent;
+    background-color: var(--text-gray-principal);
+    cursor: pointer;
+    color: var(--text-gray-second); }
 
 :root {
   --text-gray-principal: #a0aec0;
@@ -69,6 +85,12 @@ img {
   --text-shadow: 1px 1px 2px black;
   --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
 
+.suggestions {
+  background-color: var(--background-principal); }
+  .suggestions h2 {
+    text-align: center;
+    margin: 5rem 0 0 0; }
+
 form {
   padding: 4rem; }
   form .formulaire {
@@ -78,30 +100,52 @@ form {
     align-items: center; }
   form input,
   form textarea {
-    min-width: 60rem;
     min-height: 3rem;
     border-radius: 0.5rem;
-    margin: 0 2rem;
     padding: 1rem 2rem; }
 
 .alert {
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  padding: 05rem; }
 
-header {
+.imageHelp,
+.emailHelp {
+  color: white; }
+
+.navOne {
   background-color: var(--background-principal);
-  height: 10vh; }
+  height: 100px; }
+  .navOne #navbarContent {
+    justify-content: space-evenly; }
+    .navOne #navbarContent:collapse {
+      margin-top: 100px;
+      margin-left: 400px;
+      background-color: var(--background-principal);
+      border-radius: 0.3rem;
+      color: white; }
+
+.navTwo {
+  background-color: var(--text-gray-second);
+  height: 60px; }
+  .navTwo .navbar-double {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem; }
 
 footer {
   background-color: var(--background-principal);
-  height: 10vh; }
+  height: 60px; }
 
 form {
   background-color: var(--background-principal);
-  height: 80vh; }
+  height: auto; }
 
 .hero {
   background-color: var(--blue-sky);
-  height: 50vh; }
+  padding: 3rem 3rem;
+  height: auto; }
   .hero .hero-hero {
     display: flex;
     align-items: center;
@@ -121,7 +165,7 @@ form {
 
 .contenus {
   background-color: var(--pink-red);
-  height: 30vh; }
+  height: auto; }
   .contenus.contenus-compagnies {
     background-color: var(--orange); }
   .contenus.contenus-feho {
@@ -132,7 +176,8 @@ form {
     background-color: var(--blue-sky); }
 
 .card {
-  box-shadow: var(--box-shadow); }
+  box-shadow: var(--box-shadow);
+  border-radius: 0.4rem; }
   .card .card-body .card-title,
   .card .card-body .card-text {
     color: var(--text-marron-principal); }

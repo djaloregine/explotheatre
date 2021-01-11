@@ -1,3 +1,12 @@
+.suggestions {
+    background-color: var(--background-principal);
+
+    h2 {
+        text-align: center;
+        margin: 5rem 0 0 0;
+    }
+}
+
 form {
     padding: 4rem;
 
@@ -10,14 +19,18 @@ form {
 
     input,
     textarea {
-        min-width: 60rem;
         min-height: 3rem;
         border-radius: 0.5rem;
-        margin: 0 2rem;
         padding: 1rem 2rem;
     }
 }
 
 .alert {
     margin: 1rem 0;
+    padding: 05rem;
+}
+
+.imageHelp,
+.emailHelp {
+    color: white;
 }

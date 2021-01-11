@@ -1,31 +1,61 @@
 @import "generalities";
 @import "variables";
-@import "compagnies";
-@import "feho";
-@import "festivals";
-@import "formations";
+@import "media";
 @import "suggestions";
 
-
-header {
+// Header
+.navOne {
     background-color: var(--background-principal);
-    height: 10vh;
+    height: 100px;
+
+    #navbarContent {
+        justify-content: space-evenly;
+
+        &:collapse {
+            margin-top: 100px;
+            margin-left: 400px;
+            background-color: var(--background-principal);
+            border-radius: 0.3rem;
+            color: white;
+        }
+    }
+
+}
+
+.navTwo {
+
+    background-color: var(--text-gray-second);
+    height: 60px;
+
+    .navbar-double {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0.5rem;
+
+    }
 }
 
 
+// FIN Header
+
 footer {
     background-color: var(--background-principal);
-    height: 10vh;
+    height: 60px;
 }
 
 form {
     background-color: var(--background-principal);
-    height: 80vh;
+    height: auto;
 }
+
+
 
 .hero {
     background-color: var(--blue-sky);
-    height: 50vh;
+    padding: 3rem 3rem;
+    height: auto;
 
     .hero-hero {
 
@@ -37,7 +67,6 @@ form {
             width: 540px;
             height: 282px;
             display: inline-block;
-
 
         }
     }
@@ -67,7 +96,7 @@ form {
 
 .contenus {
     background-color: var(--pink-red);
-    height: 30vh;
+    height: auto;
 
     &.contenus-compagnies {
         background-color: var(--orange);
@@ -90,8 +119,14 @@ form {
     }
 }
 
+
+
+
+
+
 .card {
     box-shadow: var(--box-shadow);
+    border-radius: 0.4rem;
 
     .card-body {
 

@@ -1,0 +1,18 @@
+form {
+  padding: 4rem; }
+  form .formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  form input,
+  form textarea {
+    min-width: 60rem;
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    margin: 0 2rem;
+    padding: 1rem 2rem; }
+
+.alert {
+  margin: 1rem 0;
+  padding: 05rem; }
