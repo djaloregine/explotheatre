@@ -68,6 +68,10 @@ form {
             height: 282px;
             display: inline-block;
 
+            @include xs {
+                width: 300px;
+                height: auto;
+            }
         }
     }
 
@@ -118,11 +122,6 @@ form {
 
     }
 }
-
-
-
-
-
 
 .card {
     box-shadow: var(--box-shadow);

@@ -6,8 +6,7 @@
 html,
 body {
   font-size: 1rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  overflow: hidden; }
+  font-family: Montserrat, Arial, Helvetica, sans-serif; }
 
 header,
 footer {
@@ -154,6 +153,10 @@ form {
       width: 540px;
       height: 282px;
       display: inline-block; }
+      @media (max-width: 480px) {
+        .hero .hero-hero .hero-image {
+          width: 300px;
+          height: auto; } }
   .hero.hero-compagnies {
     background-color: var(--marron-red); }
   .hero.hero-feho {
